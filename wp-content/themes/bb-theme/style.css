@@ -1,0 +1,389 @@
+/*
+Theme Name: WP Bootstrap
+Theme URI: http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial
+Description: A demo theme built to accompany the Treehouse blog post <a href="http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial">How to Build a WordPress Theme with Bootstrap</a>.
+Author: Zac Gordon
+Author URI: http://teamtreehouse.com/
+Version: 1.0
+Tags: responsive, white, bootstrap
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+
+This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
+*/
+
+@import url('css/bootstrap.css'); 
+@import url('css/bootstrap-responsive.css'); 
+
+/* Generell tekst-stil */
+h1{
+font-size:1.2em;
+}
+
+h2 {
+font-size:1.6em;
+color: #6B333A;
+text-align:center
+}
+
+h3 {
+font-size:1.2em;
+color: #6B333A;
+}
+
+#bgheader, #footermenu ul {   
+list-style-type: none;
+font-family: Calibri;
+font-style: normal;
+}
+
+a {
+text-decoration: none;
+}
+
+body {
+background:#F1E8E7;
+}
+
+
+/* Header-content */
+.logo {
+position: absolute;
+width: 394px;
+height: 145px;
+left: 0px;
+top: 0px;
+}
+
+#bgheader {
+background-color:#6B333A;
+height:145px;
+
+}
+
+#bgheader ul {
+position:absolute;
+top:50px;
+margin-left:300px;
+font-weight: bold;
+font-size: 28px;
+color: #FFB8B1;
+}
+#bgheader a {
+color:#FFB8B1;
+margin-right:33px;
+}
+
+#bgheader li {
+display: inline;
+ text-decoration:none;
+}
+
+
+/* Footer content */ /* float:left; margin:0 auto; */
+#footer {
+background-color:#988681;
+left:0px;
+height:233px;
+
+}
+
+.footerWrapper{
+margin:0 auto;
+max-width:1600px;
+
+justify-content: space-between;
+}
+
+
+.logofooter {
+width:auto;
+height:94px;
+margin-top:10%;
+}
+.logofooter img{
+display:block;
+margin:0 auto;
+}
+
+
+.menufooter {
+margin-top:7%;
+}
+
+#kontaktfooter p {
+line-height:1.5;
+color:#FFFFFF;
+margin-top:10%;
+}
+    
+#footermenu {
+top:40px;
+margin:0 auto;
+}
+
+#footer ul {
+font-weight:500;
+font-size: 16px;
+line-height:1.5;
+font-size:18px;
+padding: 0;
+}
+
+#footer a {
+color:#FFFFFF;
+}
+
+
+/* Banner content */
+#banner{
+ width:100%;   
+height:auto;
+position:relative;
+}
+
+#bannerText{
+position:absolute;
+top:50%;
+text-align:center;
+font-size:50px;
+color:#FFF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Hovedtekst */
+#maintext{
+background:#F1E8E7;
+height:auto;
+line-height:2;
+}
+
+.maintextwrapper {
+padding-top:70px;
+padding-bottom:70px;
+margin:0 auto;
+width:50%;
+}
+
+#maintext h2{
+
+;
+margin-bottom:5vh;  
+}
+
+#maintext p {
+margin-bottom:20px; 
+}
+
+
+#frontLink li {
+list-style:none;
+}
+
+#maintext a {
+color:#993441;
+}
+
+
+/* Artikler med lenker på forsiden */
+#articleParentLight {
+display:flex;
+width:50%;
+height:auto;
+margin:0 auto;    
+}
+
+#articleParentDark {
+display:flex;
+flex-direction: row-reverse;
+width:50%;
+height:auto;
+margin:0 auto;
+}
+
+#homeArticleLight {
+background:#F3F3F3;   
+}
+
+#homeArticleLight h3 {  
+margin-bottom:3vh;
+}
+
+#homeArticleDark {
+background:#F1E8E7;
+flex-direction: row-reverse;
+}
+
+#homeArticleDark h3 {  
+margin-bottom:3vh;
+}
+
+.bildeWrapper {
+display:flex;
+align-items: flex-start;
+flex-direction: row;
+margin-top:5vh;
+margin-bottom:5vh;
+}
+
+.bildeWrapper img {
+width:auto;
+height:150px;
+}
+
+.tekstWrapper {
+display:flex;
+flex-direction: column;
+margin-top:5vh;
+margin-bottom:5vh;
+ 
+}
+
+#homeArticleLight .tekstWrapper {
+    margin-left:2vw;
+}
+
+#homeArticleDark .tekstWrapper {
+    margin-right:2vw;
+}
+
+.bildeContainer {
+position: relative;
+width: 50%;
+}
+
+.bildeContainer .knapp {
+position: absolute;
+bottom: 0;
+width:192px;
+background-color:#993441;
+color: white;
+font-size: 16px;
+padding: 12px 24px;
+border: none;
+cursor: pointer;
+}
+
+.bildeContainer .knapp:hover {
+  background-color: black;
+}
+
+
+/* Kontakt oss */
+#kontakt {
+display:flex; 
+padding-bottom:10%;
+}
+
+.AS{
+float:left; 
+margin:0 auto;
+}
+    
+.eriksen{
+float: left;
+margin:0 auto;
+}
+
+#kontaktskjema {
+padding-top:2%;
+}
+
+
+#nf-form-2-cont .nf-form-content input[type="text"],  #nf-form-2-cont .nf-form-content input[type="email"], #nf-form-2-cont .nf-form-content textarea{
+    background: #D7CFCF;
+    color:#7D7D7D;
+    padding-left: 20;
+    padding-right: 0;
+    font-size: 12px;
+    margin-top:-10px;
+}
+
+
+#nf-form-2-cont .nf-form-content input[type="button"]{
+    background: #C85757;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 22px;
+    padding: 10 20px;
+    line-height:6px;
+    margin: 0 auto;
+    width:100%;
+}
+#nf-form-2-cont .nf-form-content input[type="button"]:hover{
+    background: #E19595;
+    color: #7D7D7D;
+
+}
+#nf-form-2-cont .submit-wrap .nf-field-element{
+    text-align: center;
+}
+
+
+/* Konsulenter  homeArticleLight => konsulent , articleParentLight = > konsulentParent */ 
+
+#konsulentParent {
+display:flex;
+width:70%;
+height:auto;
+margin:0 auto; 
+}
+
+#konsulent h3 {  
+margin-bottom:3vh;
+}
+
+
+.konsulentBildeWrapper {
+display:flex;
+align-items: center;
+flex-direction: row;
+text-align:center;
+margin-bottom:5vh;
+}
+
+
+.konsulentTekstWrapper {
+display:flex;
+flex-direction: column;
+margin-bottom:5vh;
+padding-left:5vh;
+margin-top:5vh;
+ 
+}
+
+#konsulent .konsulentTekstWrapper {
+    margin-left:2vw;
+}
+
+
+.konsulentBildeContainer {
+position: relative;
+width: 100%;
+}
+
+.konsulentBildeContainer h3{
+margin-top:1.5em;
+line-height:0em;
+}
+
+
+.konsulentBildeContainer p{
+margin-bottom:0.3em;
+}
+
+
+.circle-image{
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 225px;
+  height: 225px;
+}
+.circle-image img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
