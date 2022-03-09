@@ -4,51 +4,52 @@
 
 <?php the_content(); ?>
 
+<div class="bannerPush"></div>
+
 <div id="banner" class="container-fluid px-0">
-<div class="row">
-<img class="banner" src="/barnevernbemanning/wp-content/themes/bb-theme/img/phone.png">
-<div id="bannerText">
-<h1>Kontakt <b>oss</b></h1>    
-</div>
-</div>
+    <img class="banner" src="/barnevernbemanning/wp-content/themes/bb-theme/img/phone.jpg">
+    <div id="bannerText">
+        <h1>Kontakt <b>oss</b></h1>    
+    </div>
 </div>
 
-<div id="maintext" class="container-fluid px-0">
-<div class="maintextwrapper">
+<div id="topp"></div>
+
+<div id="arrow">
+    <a href="#topp" id="arrow"><i class="material-icons">arrow_drop_down</i></a>
+</div>
+
+<! –– Hovedtekst ––>
+<div id="topText" class="container-fluid px-0">
+    <div class="maintextwrapper col-md-9">
+        <h2> <B>KONTAKTOPPLYSNINGER</B></h2> 
+        <div class="skille"><hr></div>    
     
-<h2> <b>Kontaktopplysninger</b></h2> 
+        <row>    
+        <div id="kontakt col-md-8">
+            <div class="AS col-md-4">    
+                <h3>Barnevernbemanning AS</h3>
+                <p>Teievegen 24, Råholt, 2070<br>
+                     Tel: +47 400 67 005,</p>
+            </div>   
+    
+            <div class="eriksen col-md-4">    
+                <h3>Kjell Inge Eriksen</h3>
+                <p>Grunnlegger <br>
+                kjell.inge@barnevernbemanning.no</p>
+            </div>
+        </div>    
+        </row> 
   
-<div id="kontakt">
+        <div class="skille"><hr></div>
     
-<div class="AS">    
-    <h3>Barnevernbemanning AS</h3>
-    <p>    Teievegen 24, Råholt, 2070<br>
-     Tel: +47 400 67 005,</p>
-    
-</div>   
-    
-<div class="eriksen">    
-    <h3>Kjell Inge Eriksen</h3>
-    <p>Grunnlegger <br>
-    kjell.inge@barnevernbemanning.no</p>
+<! –– kontaktskjema ––>    
+        <div id="kontaktskjema">
+            <?php echo do_shortcode("[ninja_form id=2]");  ?>
+        </div>
+    </div> 
     
 </div>
-
-
-</div>    
-  
-<hr>
-<div id="kontaktskjema">
-<h2> <b>Kontaktskjema</b></h2> 
-<?php echo do_shortcode("[ninja_form id=2]");  ?>
-</div>
-</div>  
-</div>
-
-
-
-
-
 
 <?php endwhile; else: ?>
 	<p><?php _e('Sorry, no posts matched your criteria.'); ?></p>

@@ -15,98 +15,226 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
 
 @import url('css/bootstrap.css'); 
 @import url('css/bootstrap-responsive.css'); 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway&display=swap');
+
+
+#homeArticlesMobile{
+ display:none;      
+}
+
 
 /* Generell tekst-stil */
-h1{
-font-size:1.2em;
+h1 {
+font-size:3rem;
+font-family: 'Open Sans', sans-serif;
 }
 
 h2 {
-font-size:1.6em;
-color: #6B333A;
-text-align:center
+font-size:2.2rem; 
+text-align:center; 
+color:#6B333A;
+margin-bottom:4vh;
+font-family: 'Open Sans', sans-serif;
 }
 
 h3 {
-font-size:1.2em;
+font-size:1.65rem;
 color: #6B333A;
+font-family: 'Open Sans', sans-serif;
+font-weight:600;
+}
+
+h4{
+font-family: 'Raleway', sans-serif;
+}
+
+.skille {
+width:10%;
+margin: 0 auto;
+margin-top:50px;
+margin-bottom:50px;
+}
+
+.skille hr {
+border: 2px solid #C85757;
+opacity: 1;
+}
+
+p {
+font-size:1rem;
+color:black;
+margin-bottom: 3vh;
+font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+font-size:1rem; 
 }
 
 #bgheader, #footermenu ul {   
 list-style-type: none;
-font-family: Calibri;
 font-style: normal;
 }
 
 a {
 text-decoration: none;
+color:#993441;
+font-family: 'Raleway', sans-serif;
 }
 
 body {
-background:#F1E8E7;
+background:#F8F8F8;
+margin:0;
+padding:0;
+overflow-x:hidden;
 }
 
 
 /* Header-content */
 .logo {
-position: absolute;
-width: 394px;
-height: 145px;
+width: auto;
+height: 90px;
 left: 0px;
 top: 0px;
+position:fixed;
+position:top:0;
+}
+
+#menuMobile {
+top:7%;
+position:fixed; 
+display:none;
+right:0;
+background:#993441;
+color:#FFF;
+}
+
+#menuMobile a {
+color:#fff;
+}
+
+#menuMobile ul {
+list-style:none;
+}
+
+#menuOpen{
+display:none;
+position:absolute;
+right:0;
+margin-top:1.4%;
+}
+
+#menuClose{
+display:none; 
+position:absolute;
+right:0;
+margin-top:1.4%;
 }
 
 #bgheader {
 background-color:#6B333A;
-height:145px;
-
+height:90px;
+position:fixed;
 }
 
 #bgheader ul {
-position:absolute;
-top:50px;
-margin-left:300px;
-font-weight: bold;
-font-size: 28px;
+font-size:1.2rem;
+top:3vh;
+text-align:center;
+font-weight: 500;
 color: #FFB8B1;
+position:fixed;
+position:top:0;
+right:10%;
 }
+
 #bgheader a {
 color:#FFB8B1;
-margin-right:33px;
+margin-right:2vw;
+}
+
+#bgheader a:hover{
+color:#FFF;
 }
 
 #bgheader li {
 display: inline;
- text-decoration:none;
+text-decoration:none;
 }
 
 
-/* Footer content */ /* float:left; margin:0 auto; */
+/* Banner content */
+.bannerPush {
+height:90px;
+}
+
+#banner{
+width:100%;   
+height:91vh;
+z-index:-1;
+position:relative;
+display: flex;
+}
+
+#banner img {
+z-index:-3;
+width:100%;
+height:100%;
+object-fit: cover;
+}
+
+#bannerText{
+width:100%;
+position:absolute;
+text-align:center;
+top:55%;
+color:#FFF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+z-index:2;    
+}
+
+#arrow i {
+color:#FFF;
+font-size:8rem;
+text-align:center;
+}
+
+#arrow {
+text-align:center;
+width:100%;
+display:block;
+margin-top:-120px;
+margin-bottom:100px;
+}
+
+
+/* Footer content */ 
 #footer {
-background-color:#988681;
+background-color:#3d2629;
 left:0px;
-height:233px;
-
 }
 
-.footerWrapper{
-margin:0 auto;
-max-width:1600px;
+#footer h4 {
+margin-top:5vh;  
+color:#FFF;
+} 
 
-justify-content: space-between;
-}
-
+#footer hr {
+color:bisque;    
+} 
 
 .logofooter {
 width:auto;
 height:94px;
-margin-top:10%;
+margin-top:4.5vh;
+margin-bottom:5vh; 
 }
+
 .logofooter img{
 display:block;
 margin:0 auto;
 }
-
 
 .menufooter {
 margin-top:7%;
@@ -115,12 +243,14 @@ margin-top:7%;
 #kontaktfooter p {
 line-height:1.5;
 color:#FFFFFF;
-margin-top:10%;
+margin-bottom:5vh; 
+font-family: 'Raleway', sans-serif;
 }
     
 #footermenu {
 top:40px;
 margin:0 auto;
+margin-bottom:5vh; 
 }
 
 #footer ul {
@@ -129,6 +259,7 @@ font-size: 16px;
 line-height:1.5;
 font-size:18px;
 padding: 0;
+font-family: 'Raleway', sans-serif;
 }
 
 #footer a {
@@ -136,194 +267,275 @@ color:#FFFFFF;
 }
 
 
-/* Banner content */
-#banner{
- width:100%;   
-height:auto;
-position:relative;
-}
-
-#bannerText{
-position:absolute;
-top:50%;
-text-align:center;
-font-size:50px;
-color:#FFF;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-
 /* Hovedtekst */
 #maintext{
-background:#F1E8E7;
+height:auto;
+line-height:2;
+padding-bottom:15vh;
+}
+
+#toptext{
 height:auto;
 line-height:2;
 }
 
 .maintextwrapper {
-padding-top:70px;
-padding-bottom:70px;
 margin:0 auto;
 width:50%;
-}
-
-#maintext h2{
-
-;
-margin-bottom:5vh;  
 }
 
 #maintext p {
 margin-bottom:20px; 
 }
 
-
-#frontLink li {
-list-style:none;
-}
-
 #maintext a {
 color:#993441;
+font-size:0.9vw;
 }
-
 
 /* Artikler med lenker på forsiden */
-#articleParentLight {
+.articleParentLight {
 display:flex;
-width:50%;
+height:auto;  
+}
+
+.articleParentDark {
+display:flex;
 height:auto;
-margin:0 auto;    
 }
 
-#articleParentDark {
-display:flex;
-flex-direction: row-reverse;
-width:50%;
-height:auto;
-margin:0 auto;
+.homeArticleLight {
+background:#F1E8E7;  
 }
 
-#homeArticleLight {
-background:#F3F3F3;   
+.homeArticleLight h3 { 
+padding-bottom:1rem;
 }
 
-#homeArticleLight h3 {  
-margin-bottom:3vh;
+.homeArticleDark h3 {  
+padding-bottom:1rem;
 }
 
-#homeArticleDark {
-background:#F1E8E7;
-flex-direction: row-reverse;
+.homeArticleMobile {
+position:relative;
 }
 
-#homeArticleDark h3 {  
-margin-bottom:3vh;
+.tekstWrapperMobile {
+position: absolute;
+border-radius:0px 5px 5px 0px;
+bottom:5%;
+background-color: #FFF;
+padding-left: 20px;
+padding-right: 20px;    
+padding-top:2vh;
 }
 
-.bildeWrapper {
-display:flex;
-align-items: flex-start;
-flex-direction: row;
-margin-top:5vh;
-margin-bottom:5vh;
+.tekstWrapperMobileB {
+position: absolute;
+border-radius:0px 5px 5px 0px;
+bottom:5%;
+background-color: #F1E8E7;
+padding-left: 20px;
+padding-right: 20px;    
+padding-top:2vh;
 }
 
-.bildeWrapper img {
-width:auto;
-height:150px;
+#articlePush{
+height:1vh;
+background:#3d2629;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("/barnevernbemanning/wp-content/themes/bb-theme/img/files.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  width:100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  /* The image used */
+background-image: url("/barnevernbemanning/wp-content/themes/bb-theme/img/konsulenter.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+  width:100%;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.parallax3 {
+  /* The image used */
+background-image: url("/barnevernbemanning/wp-content/themes/bb-theme/img/bamse.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+  width:100%;
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax4 {
+  /* The image used */
+     background-image: url("/barnevernbemanning/wp-content/themes/bb-theme/img/tlf.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  width:100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .tekstWrapper {
+height:100%;
 display:flex;
-flex-direction: column;
-margin-top:5vh;
-margin-bottom:5vh;
- 
+flex-direction:column;
+padding-right:50%;
+align-content: center;
+justify-content:center;
+padding-left:2vw;
 }
 
-#homeArticleLight .tekstWrapper {
-    margin-left:2vw;
+.tekstWrapperLeft {
+height:100%;
+display:flex;
+flex-direction:column;
+padding-left:50%;
+align-content: center;
+justify-content:center;
+padding-right:2vw;
 }
 
-#homeArticleDark .tekstWrapper {
-    margin-right:2vw;
+.btn {
+background:#993441;
+width: fit-content; 
+border:none;
+margin-bottom:1vh;
 }
 
-.bildeContainer {
-position: relative;
-width: 50%;
+.btn:hover {
+background:#E19595;
 }
 
-.bildeContainer .knapp {
-position: absolute;
-bottom: 0;
-width:192px;
-background-color:#993441;
-color: white;
-font-size: 16px;
-padding: 12px 24px;
-border: none;
-cursor: pointer;
+a {
+text-decoration:none;
 }
 
-.bildeContainer .knapp:hover {
-  background-color: black;
+
+/* Tjenester */
+#tjenester {
+margin-bottom:10vh;
+}
+
+.tjenesterIcons {
+display:flex;
+justify-content:center;
+padding:2%;    
+} 
+
+.tjenesterIcons h3 {
+text-align:center;
+margin-bottom:4%;
+font-size:1.4rem;
+}
+
+.tjenesterIcons i {
+display:flex;
+justify-content:center;
+font-size:6rem;
+}
+
+.tjenesterIcons p {
+display:flex;
+justify-content:center;
+margin-bottom:0;
+font-weight:bold;
+}
+
+#maintextTjenester{
+height:auto;
+line-height:2;
+padding-bottom:6vh;
+padding-top:4vh;
+background:#F1E8E7;
 }
 
 
 /* Kontakt oss */
-#kontakt {
-display:flex; 
-padding-bottom:10%;
-}
-
 .AS{
-float:left; 
 margin:0 auto;
+text-align:center;
+padding-top:2vh;
 }
     
 .eriksen{
-float: left;
 margin:0 auto;
+text-align:center;
+padding-top:1vh;    
+padding-bottom:2vh;    
 }
 
 #kontaktskjema {
 padding-top:2%;
+z-index:-1;
+padding-bottom:15vh;
 }
 
+.nf-field-element {
+z-index:-1;
+}
 
 #nf-form-2-cont .nf-form-content input[type="text"],  #nf-form-2-cont .nf-form-content input[type="email"], #nf-form-2-cont .nf-form-content textarea{
     background: #D7CFCF;
     color:#7D7D7D;
     padding-left: 20;
     padding-right: 0;
-    font-size: 12px;
+    font-size: 1rem;
     margin-top:-10px;
 }
 
-
 #nf-form-2-cont .nf-form-content input[type="button"]{
     background: #C85757;
-    border-radius: 10px;
+    border-radius: 0px;
     color: #FFF;
-    font-size: 22px;
+    font-size: 1rem;
     padding: 10 20px;
     line-height:6px;
-    margin: 0 auto;
-    width:100%;
+    width:140px;
+    height:150%;
+    float:right;
 }
+
 #nf-form-2-cont .nf-form-content input[type="button"]:hover{
     background: #E19595;
     color: #7D7D7D;
-
 }
+
 #nf-form-2-cont .submit-wrap .nf-field-element{
     text-align: center;
 }
 
 
-/* Konsulenter  homeArticleLight => konsulent , articleParentLight = > konsulentParent */ 
-
+/* Konsulenter*/ 
 #konsulentParent {
 display:flex;
 width:70%;
@@ -335,29 +547,32 @@ margin:0 auto;
 margin-bottom:3vh;
 }
 
+.konsulent1 {
+display: flex;
+flex-wrap:nowrap;
+}
 
 .konsulentBildeWrapper {
 display:flex;
 align-items: center;
-flex-direction: row;
+float: left;
 text-align:center;
-margin-bottom:5vh;
+margin-bottom:15vh;
+z-index:-1;
 }
-
 
 .konsulentTekstWrapper {
 display:flex;
+float: right;
 flex-direction: column;
-margin-bottom:5vh;
+margin-bottom:15vh;
 padding-left:5vh;
 margin-top:5vh;
- 
 }
 
 #konsulent .konsulentTekstWrapper {
     margin-left:2vw;
 }
-
 
 .konsulentBildeContainer {
 position: relative;
@@ -369,11 +584,22 @@ margin-top:1.5em;
 line-height:0em;
 }
 
-
 .konsulentBildeContainer p{
 margin-bottom:0.3em;
 }
 
+#konsulentParentMobile{
+display:flex;
+flex-direction:column;
+}
+
+.konsulentTekstWrapperMobile{
+padding-top:5%;
+}
+
+#konsulentMobile{
+display:none;
+} 
 
 .circle-image{
   display: inline-block;
@@ -382,8 +608,126 @@ margin-bottom:0.3em;
   width: 225px;
   height: 225px;
 }
+
 .circle-image img{
   width:100%;
   height:100%;
   object-fit: cover;
 }
+
+
+/* Responsiveness */
+@media screen and (max-width: 1600px) { 
+.maintextwrapper {
+width:55%;
+}
+   
+}
+
+@media screen and (max-width: 1400px) { 
+.maintextwrapper {
+width:60%;
+}
+
+}
+
+
+@media screen and (max-width: 1200px) { 
+#bgheader ul {
+top:3%;
+}    
+    
+.logo {
+height: 70px;
+}
+    
+#bgheader {
+height:70px;
+}
+
+.bannerPush{
+height:70px;
+}
+
+
+/* MOBIL breakpoint */   
+@media screen and (max-width: 991px) { 
+.maintextwrapper {
+width:75%;
+}
+
+#konsulentMobile{
+display:block;
+} 
+    
+#konsulent{
+display:none;
+} 
+    
+h1{
+font-size:2rem;
+}
+ 
+.konsulent1 {
+flex-wrap:wrap;
+}
+
+.konsulentBildeWrapper{
+margin:0 auto;
+}    
+
+#menuOpen{
+display:block;    
+}
+
+#menuClose{
+display:none;    
+}    
+    
+.desktop{
+display:none;
+}
+#homeArticlesDesktop{
+display:none;       
+} 
+#homeArticlesMobile{
+display:block;      
+}
+    
+@media screen and (max-width: 800px) { 
+.logo {
+height: 50px;
+}
+    
+#bgheader {
+height:50px;
+}    
+
+.bannerPush{
+height:50px;
+}
+    
+.maintextwrapper {
+width:90%;
+}
+
+}
+    
+@media screen and (max-width: 600px) { 
+.maintextwrapper {
+width:97%;
+}
+
+}
+
+/* Slår av parallax for mobile enheter og tablets */
+@media only screen and (max-device-width: 1200px) {
+.parallax, .parallax2, .parallax3, .parallax4 {
+    
+background-attachment: scroll;
+}
+    
+}
+
+
+    

@@ -3,7 +3,7 @@
 
     <?php wp_footer(); ?>
 <div id="footer">
-<div id="" class="container">
+<div class="container">
 
 <div class="row">
 
@@ -11,7 +11,9 @@
 <img class="logofooter" src="/barnevernbemanning/wp-content/themes/bb-theme/img/transparentsmallwhite.png">
 </div>     
     
-<div id="kontaktfooter" class="col-md-4">
+<div id="kontaktfooter" class="col-md-4 col-md-offset-2" >
+<h4>Kontaktinfo</h4>
+<hr>
 <p class="kontaktfooter">Barnevernbemanning AS  © 2022 <br>
 Org.nr.: 999999999 <br>
 post@barnevernbemanning.no <br>
@@ -19,7 +21,9 @@ Tlf. 40067005
 </p>  
 </div>  
 
-<div id="footermenu" class="col-md-4">
+<div id="footermenu" class="col-md-2">
+<h4>Snarveier</h4>
+<hr>
 <ul class="menufooter">
 <li><a href="/barnevernbemanning/hjem">Hjem</a></li>
 <li><a href="/barnevernbemanning/tjenester">Tjenester</a></li>
@@ -38,15 +42,21 @@ Tlf. 40067005
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<!-- script til bildehjul -->
+<!-- script til mobilmeny -->
     <script>
-$(".users .vce-single-image-container").click(function(){
-    $(".users .vce-single-image-container").removeClass("active");
-    $(this).addClass("active");
-    var id = "#" + $(this).attr("id") + "-content .user-row";
-    console.log(id);
-    $(".user-row").hide();
-    $(id).show();
+$("#menuOpen").click(function(e){
+    e.preventDefault();
+    $("#menuMobile").show();
+    $(this).hide();
+    $("#menuClose").show();
+});
+
+
+$("#menuClose").click(function(e){
+    e.preventDefault();
+    $("#menuMobile").hide();
+    $(this).hide();
+    $("#menuOpen").show();
 });
 </script>
 

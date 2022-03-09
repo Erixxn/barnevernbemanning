@@ -3,6 +3,8 @@
     <title><?php wp_title('|',1,'right'); ?> <?php bloginfo('name'); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+     
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Le styles -->
     <link href="<?php bloginfo('stylesheet_url');?>" rel="stylesheet">
 
@@ -22,10 +24,20 @@
       <a href="/barnevernbemanning"><img class="logo" src="/barnevernbemanning/wp-content/themes/bb-theme/img/logoroed.png"></a>           
     </div>
 
- <div class="col-6" id="menuheader">
-     
+    <!-- Desktop -->
+<div class="col-6" id="menuheader">
+<nav class="desktop navbar navbar-default">    
     <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+</nav>   
+    
+<a href="#" id="menuOpen"><i class="material-icons">menu</i></a>
+<a href="#" id="menuClose"><i class="material-icons">close</i></a>
+
+ <!-- Mobile -->   
+
      
+
+
      
   <!--          <ul>
             <li><a href="default.asp">HJEM</a></li>
@@ -41,6 +53,12 @@
 </div>
 </div>
 </div>
+
+<div class="col-6" id="menuMobile">
+<nav class="navbar navbar-default">    
+    <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+</nav> 
+      </div>
   
     
 
