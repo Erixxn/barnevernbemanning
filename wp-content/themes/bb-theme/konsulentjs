@@ -1,0 +1,41 @@
+<body>
+
+  <h3><span id="navn1"></span></h3>
+  <p><span id="stilling1"></span></p>
+  <p><span id="mail1"></span></p>
+  <p><span id="tlf1"></span></p>
+  <p><span id="CV"></span></p>
+  
+  
+  <p><span id="paragraf1"></span></p>
+  <p><span id="paragraf2"></span></p>
+  <p><span id="paragraf3"></span></p>
+</body>
+  
+  <script>
+    let navn1 = "Kjell Inge Eriksen";
+    let stilling1 ="Sosionom";
+    let mail1 ="kjell.inge@barnevernbemanning.no";
+    let tlf1 ="+47 400 67 005";
+    let CV ="CV gis ved forespørsel";
+    
+    let paragraf1 ="Kjell Inge har arbeidet i barneverntjenesten siden 1992. Først som kommunalt ansatt i 10 år, og siden 2003 som utleid konsulent, først fra eget firma, og deretter som utleid konsulent fra ulike vikarbyråer innenfor barnevernfeltet. Det er gjennom den lange erfaringen Kjell Inge fikk ideen om å lage et nettverk av erfarne konsulenter, som har som mål å tilby kommunale barneverntjenester god barnevernfaglig bistand til en lavere kostnad enn det vikarbyråene klarer.";
+    let paragraf2 ="Kjell Inge er sosionom med videreutdanning i barne- og ungdomsvern. Kjell Inge har allsidig arbeidserfaring innenfor barnevernsfeltet, og har også vært beredskapshjem i 1 år og fosterhjem i 10 år. Kjell Inge har fra 2003 til dags dato hatt oppdrag som konsulent for omkring 40 ulike kommuner, og gjentatte ganger i flere av kommunene.";
+    let paragraf3 ="Kjell Inge har mye erfaring med alle typer saker i barnevernet som undersøkelsessaker, veiledning og andre tiltakssaker, samt oppfølging av barn under barnevernets omsorg, både i fosterhjem, institusjon og på ettervern. Før 2018 forberedte og representerte Kjell Inge kommunale barneverntjenester med mange saker for fylkesnemnd, tingrett og lagmannsrett.";
+    
+    
+    
+    
+    
+    document.getElementById("navn1").innerHTML = navn1;
+    document.getElementById("mail1").innerHTML = stilling1;
+    document.getElementById("mail1").innerHTML = mail1;
+    document.getElementById("tlf1").innerHTML = tlf1;
+    document.getElementById("CV").innerHTML = CV;
+    document.getElementById("paragraf1").innerHTML = paragraf1;
+    document.getElementById("paragraf2").innerHTML = paragraf2;
+    document.getElementById("paragraf3").innerHTML = paragraf3;
+
+  </script>
+
+

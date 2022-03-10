@@ -25,18 +25,19 @@
     <div class="tjenesterIcons row g-0">
         <h3> <b>Konsulentene utfører følgende arbeidsoppgaver som omfavner Lov om barneverntjenester:</b> </h3>      
     
-        <div class="col-md-2">
+        <div class="tjeneste col-md-2">
             <p> Saksbehandling </p>    
-            <i class="material-icons">folder</i>
+            <i class="oneLine material-icons">folder</i>
         </div>
+        
             
-        <div class="col-md-2">
+        <div class="tjeneste col-md-2">
             <p> Tiltaksarbeid </p> 
-            <i class="material-icons">chat_bubble_outline</i>
+            <i class="oneLine material-icons">chat_bubble_outline</i>
         </div>
     
-        <div class="col-md-2">
-            <p> Oppfølging av fosterhjem </p> 
+        <div class="tjeneste col-md-2">
+            <p> Oppfølging fosterhjem </p> 
             <i class="material-icons">home</i>
         </div>    
     </div>
@@ -44,18 +45,18 @@
 
     <div class="tjenesterIcons row g-0">
     
-        <div class="col-md-2">
+        <div class="tjeneste col-md-2">
             <p> Ettervern </p>     
-            <i class="material-icons">forward</i>
+            <i class="oneLine material-icons">forward</i>
         </div>
             
-        <div class="col-md-2">
+        <div class="tjeneste col-md-2">
             <p> Diverse tilsynsføreroppdrag </p> 
             <i class="material-icons">hearing</i>
         </div>
     
-        <div class="col-md-2">
-            <p> Oppfølging av instutisjoner </p> 
+        <div class="tjeneste col-md-2">
+            <p> Oppfølging instutisjoner </p> 
             <i class="material-icons">hotel</i>
         </div>      
     </div>

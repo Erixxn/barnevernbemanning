@@ -20,7 +20,8 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
 
 
 #homeArticlesMobile{
- display:none;      
+display:none;   
+z-index:-1;
 }
 
 
@@ -102,7 +103,7 @@ position:top:0;
 }
 
 #menuMobile {
-top:7%;
+top:70px;
 position:fixed; 
 display:none;
 right:0;
@@ -318,6 +319,7 @@ padding-bottom:1rem;
 
 .homeArticleMobile {
 position:relative;
+z-index:-1;
 }
 
 .tekstWrapperMobile {
@@ -434,6 +436,17 @@ margin-bottom:1vh;
 
 .btn:hover {
 background:#E19595;
+border:none;
+}
+
+.btn:active {
+background:#E19595;
+border:none;
+}
+
+.btn:focus {
+background:#E19595;
+border:none;
 }
 
 a {
@@ -446,36 +459,48 @@ text-decoration:none;
 margin-bottom:10vh;
 }
 
+.tjeneste {
+height:140px;
+width:220px;
+position:relative;
+z-index:-1;
+}
+
 .tjenesterIcons {
 display:flex;
 justify-content:center;
-padding:2%;    
+text-align:center;
+padding:2%; 
 } 
 
 .tjenesterIcons h3 {
-text-align:center;
 margin-bottom:4%;
 font-size:1.4rem;
 }
 
 .tjenesterIcons i {
-display:flex;
-justify-content:center;
+position: absolute;
+bottom:0;
 font-size:6rem;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
 }
 
 .tjenesterIcons p {
 display:flex;
 justify-content:center;
-margin-bottom:0;
 font-weight:bold;
 }
+
 
 #maintextTjenester{
 height:auto;
 line-height:2;
 padding-bottom:6vh;
-padding-top:4vh;
+padding-top:8vh;
 background:#F1E8E7;
 }
 
@@ -648,6 +673,10 @@ height:70px;
 .bannerPush{
 height:70px;
 }
+ 
+ 
+    
+}
 
 
 /* MOBIL breakpoint */   
@@ -688,11 +717,17 @@ display:none;
 display:none;
 }
 #homeArticlesDesktop{
-display:none;       
+display:none;  
 } 
 #homeArticlesMobile{
-display:block;      
+display:block; 
+z-index:-1;
 }
+
+.logofooter {
+height:74px;
+}
+    
     
 @media screen and (max-width: 800px) { 
 .logo {
@@ -707,9 +742,17 @@ height:50px;
 height:50px;
 }
     
+#menuMobile {
+top:50px;
+}   
+    
 .maintextwrapper {
 width:90%;
 }
+    
+.tjeneste{
+width: 1000px
+}    
 
 }
     
