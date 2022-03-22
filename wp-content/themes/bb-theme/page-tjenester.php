@@ -37,7 +37,7 @@
                     <button id="bg" onclick="lukkDiv()"></button>  
                     <div id="popupWrapper">
                         <h3>Saksbehandling</h3>
-                        <p> Saksbehandling er viktig for å sikre at rette tiltak blir gjennomført. Våre konsulenter har lang erfaring med alle sider av saksbehandling </p>
+                        <p>Saksbehandlingen skal være betryggende, rask og tillitsskapende. Det er viktig at saksbehandlingen oppfyller grunnleggende krav til rettssikkerhet og at ressursbruken er tilpasset tiltaket og        sakens art, omfang og vanskelighetsgrad. <br>Saksbehandlingen skal legge til rette for at barneverntjenesten fatter riktige avgjørelser til rett tid, og for at barn og foreldres rettigheter          ivaretas på en god måte. <br> Våre konsulenter har lang erfaring med alle sider av saksbehandling. </p>
                         <button class="lKnapp" onclick="lukkDiv()">Lukk</button> 
                     </div>
                 </div>
@@ -55,7 +55,9 @@
                     <button id="bg" onclick="lukkDiv()"></button>
                     <div id="popupWrapper">
                         <h3>Tilsynsføring</h3>
-                        <p> Tilsynsføring er bla bla bla. Våre konsulenter har lang erfaring med denne typen arbeid</p>
+                        <p> En tilsynsfører har som formål å sikre at barnet blir godt ivaretatt. Tilsynsfører har som sin ene viktige oppgave – uavhengig av særlige interesser barneverntjeneste, fosterforeldre og foreldre      måtte ha – å følge med og gjøre seg opp en mening om hvorvidt barnet blir tilfredsstillende ivaretatt. <br> Som sin andre viktige oppgave har tilsynsfører ansvar for å sørge for at barnets          erfaringer og oppfatninger fanges opp og formidles til barnverntjenesten. <br>
+                             Våre konsulenter har lang erfaring med denne typen arbeid
+                        </p>
                         <button class="lKnapp" onclick="lukkDiv()">Lukk</button>  
                     </div>
                 </div>
@@ -113,7 +115,10 @@
                     <button id="bg" onclick="lukkDiv()"></button>
                     <div id="popupWrapper">
                         <h3>Tiltaksarbeid</h3>
-                        <p> Tiltak er bla bla bla. Våre konsulenter har mye kunnskap og erfaring med tiltaksarbeid </p>
+                        <p> Det må være en sammenheng mellom de behov som skal imøtekommes og de tiltak som settes i verk. Det er viktig at tiltakene er ”behovsstyrt”: valgt ut fra klientens behov, heller enn
+                            ”tilbudsstyrt”: valgt ut fra hvilke tiltak som er lett tilgjengelige og vanlige. <br>
+                            Våre konsulenter har mye kunnskap og erfaring med tiltaksarbeid.
+                        </p>
                         <button class="lKnapp" onclick="lukkDiv()">Lukk</button>  
                     </div>
                 </div>
