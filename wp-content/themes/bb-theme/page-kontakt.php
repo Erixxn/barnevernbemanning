@@ -15,11 +15,12 @@
 
 <div id="topp"></div>
 
-<div id="arrow">
-    <a href="#topp" id="arrow"><i class="material-icons">arrow_drop_down</i></a>
-</div>
+
+<a href="#hit" class="scroll-down" address="true"></a>
+
 
 <! –– Hovedtekst ––>
+<div id="hit"></div>
 <div id="topText" class="container-fluid px-0">
     <div class="maintextwrapper col-md-9">
         <h2> <B>KONTAKTOPPLYSNINGER</B></h2> 
@@ -27,20 +28,21 @@
     
         <row>    
         <div id="kontakt col-md-8">
-            <div class="AS col-md-4">    
+            <div class="AS">    
                 <h3>Barnevernbemanning AS</h3>
-                <p>Teievegen 24, Råholt, 2070<br>
-                     Tel: +47 400 67 005,</p>
+                <p>Teievegen 24, Råholt, 2070</p> 
+                <p><i class="material-icons">phone</i><a href="tel:+47-400-67-005">   +47 400 67 005</a></p>
             </div>   
     
-            <div class="eriksen col-md-4">    
+            <div class="eriksen">    
                 <h3>Kjell Inge Eriksen</h3>
-                <p>Grunnlegger <br>
-                kjell.inge@barnevernbemanning.no</p>
+                <p>Grunnlegger</p>
+                <p><i class="material-icons">email</i><a href="mailto:kjell.inge@barnevernbemanning.no">   kjell.inge@barnevernbemanning.no</a></p>
             </div>
         </div>    
-        </row> 
-  
+        </row>
+
+        
         <div class="skille"><hr></div>
     
 <! –– kontaktskjema ––>    

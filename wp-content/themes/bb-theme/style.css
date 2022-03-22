@@ -17,516 +17,681 @@ This simple theme was built using the example Bootstrap theme "Basic marketing s
 @import url('css/bootstrap-responsive.css'); 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
-#homeArticlesMobile{
-display:none;   
-z-index:-1;
+
+/* Generell stil */
+body {
+    background:#F8F8F8;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+.skille {
+    width:10%;
+    margin: 0 auto;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.skille hr {
+    border: 2px solid #C85757;
+    opacity: 1;
 }
 
 
 /* Generell tekst-stil */
 h1 {
-font-size:3rem;
-font-family: 'Open Sans', sans-serif;
+    font-size:4rem;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 0px 0px 7px grey;
 }
 
 h2 {
-font-size:2.2rem; 
-text-align:center; 
-color:#6B333A;
-margin-bottom:4vh;
-font-family: 'Open Sans', sans-serif;
+    font-size:2.5rem; 
+    text-align:center; 
+    color:#6B333A;
+    margin-bottom:4vh;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h3 {
-font-size:1.65rem;
-color: #6B333A;
-font-family: 'Open Sans', sans-serif;
-font-weight:600;
+    font-size:1.7rem;
+    color: #6B333A;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:600;
 }
 
 h4{
-font-family: 'Raleway', sans-serif;
-}
-
-.skille {
-width:10%;
-margin: 0 auto;
-margin-top:50px;
-margin-bottom:50px;
-}
-
-.skille hr {
-border: 2px solid #C85757;
-opacity: 1;
+    font-size:1.5.rem;
+    font-family: 'Open Sans', sans-serif;
 }
 
 p {
-font-size:1rem;
-color:black;
-margin-bottom: 3vh;
-font-family: 'Open Sans', sans-serif;
+    font-size:1.2rem;
+    color:black;
+    margin-bottom: 3vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 ul {
-font-size:1rem; 
+    font-size:1rem; 
 }
 
 #bgheader, #footermenu ul {   
-list-style-type: none;
-font-style: normal;
+    list-style-type: none;
+    font-style: normal;
 }
 
 a {
-text-decoration: none;
-color:#993441;
-font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color:#993441;
+    font-family: 'Raleway', sans-serif;
 }
 
-body {
-background:#F8F8F8;
-margin:0;
-padding:0;
-overflow-x:hidden;
+a:hover {
+    color:#FFB8B1;
 }
-
+    
 
 /* Header-content */
 .logo {
-width: auto;
-height: 90px;
-left: 0px;
-top: 0px;
-position:fixed;
-position:top:0;
+    width: auto;
+    height: 90px;
+    left: 0px;
+    top: 0px;
+    position:fixed;
+    position:top:0;
 }
 
 #menuMobile {
-top:70px;
-position:fixed; 
-display:none;
-right:0;
-background:#993441;
-color:#FFF;
+    top:70px;
+    position:fixed; 
+    display:none;
+    right:0;
+    background:#993441;
+    color:#FFF;
+    z-index:1;
 }
 
 #menuMobile a {
-color:#fff;
+    color:#fff;
 }
 
 #menuMobile ul {
-list-style:none;
+    list-style:none;
 }
 
 #menuOpen{
-display:none;
-position:absolute;
-right:0;
-margin-top:1.4%;
+    display:none;
+    position:absolute;
+    right:0;
+    top:17px;
 }
 
 #menuClose{
-display:none; 
-position:absolute;
-right:0;
-margin-top:1.4%;
+    display:none; 
+    position:absolute;
+    right:0;
+    top:17px;
+}
+
+#menuOpen i{
+    font-size:35px;
+}
+
+#menuClose i{
+    font-size:35px;
 }
 
 #bgheader {
-background-color:#6B333A;
-height:90px;
-position:fixed;
+    background-color:#6B333A;
+    height:90px;
+    position:fixed;
+    z-index:3;
 }
 
 #bgheader ul {
-font-size:1.2rem;
-top:3vh;
-text-align:center;
-font-weight: 500;
-color: #FFB8B1;
-position:fixed;
-position:top:0;
-right:10%;
+    font-size:1.2rem;
+    top:30px;
+    text-align:center;
+    font-weight: 500;
+    color: #FFB8B1;
+    position:fixed;
+    position:top:0;
+    right:10%;
 }
 
 #bgheader a {
-color:#FFB8B1;
-margin-right:2vw;
+    color:#FFB8B1;
+    margin-right:2vw;
 }
 
 #bgheader a:hover{
-color:#FFF;
+    color:#FFF;
 }
 
 #bgheader li {
-display: inline;
-text-decoration:none;
+    display: inline;
+    text-decoration:none;
 }
 
 
 /* Banner content */
 .bannerPush {
-height:90px;
+    height:90px;
 }
 
 #banner{
-width:100%;   
-height:91vh;
-z-index:-1;
-position:relative;
-display: flex;
+    width:100%;   
+    height:91vh;
+    z-index:-1;
+    position:relative;
+    display: flex;
 }
 
 #banner img {
-z-index:-3;
-width:100%;
-height:100%;
-object-fit: cover;
+    width:100%;
+    height:100%;
+    object-fit: cover;
 }
 
 #bannerText{
-width:100%;
-position:absolute;
-text-align:center;
-top:55%;
-color:#FFF;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-z-index:2;    
+    width:100%;
+    position:absolute;
+    text-align:center;
+    top:55%;
+    color:#FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);   
 }
 
-#arrow i {
-color:#FFF;
-font-size:8rem;
-text-align:center;
+t
+/* Pil i banner */
+section {
+    height: 100vh;
+    width: 100%;
+    display: table;
 }
 
-#arrow {
-text-align:center;
-width:100%;
-display:block;
-margin-top:-120px;
-margin-bottom:100px;
+
+.scroll-down {
+    opacity: 1;
+    -webkit-transition: all .5s ease-in 3s;
+    transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -16px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    border: 2px solid #FFF;
+    background-size: 14px auto;
+    border-radius: 50%;
+    z-index: 2;
+    -webkit-animation: bounce 2s infinite 2s;
+    animation: bounce 2s infinite 2s;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
 }
 
 
 /* Footer content */ 
 #footer {
-background-color:#3d2629;
-left:0px;
+    background-color:#3d2629;
+    left:0px;
 }
 
 #footer h4 {
-margin-top:5vh;  
-color:#FFF;
+    margin-top:5vh;  
+    color:#FFF;
 } 
 
 #footer hr {
-color:bisque;    
+    color:#FFF;    
 } 
 
 .logofooter {
-width:auto;
-height:94px;
-margin-top:4.5vh;
-margin-bottom:5vh; 
+    width:auto;
+    height:94px;
+    margin-top:4.5vh;
+    margin-bottom:5vh; 
 }
 
 .logofooter img{
-display:block;
-margin:0 auto;
+    display:block;
+    margin:0 auto;
 }
 
 .menufooter {
-margin-top:7%;
+    margin-top:7%;
 }
 
 #kontaktfooter p {
-line-height:1.5;
-color:#FFFFFF;
-margin-bottom:5vh; 
-font-family: 'Raleway', sans-serif;
+    color:#FFFFFF;
+    margin:2%;
+    font-family: 'Raleway', sans-serif;
+    font-weight:500;
+    font-size: 16px;
+}
+
+#kontaktfooter i {
+    vertical-align:middle;
+    font-size:1.2rem;
+    margin-right:0.5rem;
 }
     
 #footermenu {
-top:40px;
-margin:0 auto;
-margin-bottom:5vh; 
+    top:40px;
+    margin:0 auto;
+    margin-bottom:5vh; 
 }
 
 #footer ul {
-font-weight:500;
-font-size: 16px;
-line-height:1.5;
-font-size:18px;
-padding: 0;
-font-family: 'Raleway', sans-serif;
+    font-weight:500;
+    font-size: 16px;
+    line-height:1.5;
+    font-size:18px;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 #footer a {
-color:#FFFFFF;
+    color:#FFFFFF;
 }
 
 
 /* Hovedtekst */
 #maintext{
-height:auto;
-line-height:2;
-padding-bottom:15vh;
+    height:auto;
+    line-height:2;
+    padding-bottom:120px;
+    padding-top:120px;
 }
 
-#toptext{
-height:auto;
-line-height:2;
-}
 
 .maintextwrapper {
-margin:0 auto;
-width:50%;
+    margin:0 auto;
+    width:50%;
 }
 
+#toptext p{
+    margin:1.5%;
+}
+
+#toptext {
+    padding-top:120px;
+    padding-bottom:120px;
+}
+
+
 #maintext p {
-margin-bottom:20px; 
+    margin-bottom:20px; 
 }
 
 #maintext a {
-color:#993441;
-font-size:0.9vw;
+    color:#993441;
+    font-size:0.9vw;
 }
 
+
 /* Artikler med lenker på forsiden */
+#homeArticlesMobile{
+    display:none;   
+}
+
 .articleParentLight {
-display:flex;
-height:auto;  
+    display:flex;
+    height:auto;  
 }
 
 .articleParentDark {
-display:flex;
-height:auto;
+    display:flex;
+    height:auto;
 }
 
 .homeArticleLight {
-background:#F1E8E7;  
+    background:#F1E8E7;  
 }
 
 .homeArticleLight h3 { 
-padding-bottom:1rem;
+    padding-bottom:1rem;
 }
 
 .homeArticleDark h3 {  
-padding-bottom:1rem;
+    padding-bottom:1rem;
 }
 
 .homeArticleMobile {
-position:relative;
-z-index:-1;
+    position:relative;
+}
+
+.mobilB {
+    background-color: #F1E8E7;
+}
+
+.mobilBA {
+    background-color: #F8F8F8;
 }
 
 .tekstWrapperMobile {
-position: absolute;
-border-radius:0px 5px 5px 0px;
-bottom:5%;
-background-color: #FFF;
-padding-left: 20px;
-padding-right: 20px;    
-padding-top:2vh;
+    border-radius:0px 5px 5px 0px;
+    bottom:5%;
+    background-color: #F8F8F8;
+    padding-left: 35px;
+    padding-right: 30px;    
+    padding-top:5vh;
+    padding-bottom:5vh;
+    width:100%;
 }
 
 .tekstWrapperMobileB {
-position: absolute;
-border-radius:0px 5px 5px 0px;
-bottom:5%;
-background-color: #F1E8E7;
-padding-left: 20px;
-padding-right: 20px;    
-padding-top:2vh;
-}
-
-#articlePush{
-height:1vh;
-background:#3d2629;
+    border-radius:0px 5px 5px 0px;
+    bottom:5%;
+    background-color: #F1E8E7;
+    padding-left: 35px;
+    padding-right: 30px;    
+    padding-top:5vh;
+    padding-bottom:5vh;
+    width:100%;
 }
 
 .parallax {
-  /* The image used */
-  background-image: url("/barnevernbemanning/wp-content/themes/bb-theme/img/files.jpg");
-  /* Set a specific height */
-  min-height: 500px;
-  width:100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url("/barnevernbemanning/wp-content/themes/bb-theme/img/files.jpg");
+    min-height: 500px;
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .parallax2 {
-  /* The image used */
-background-image: url("/barnevernbemanning/wp-content/themes/bb-theme/img/konsulenter.jpg");
-
-  /* Set a specific height */
-  min-height: 500px;
-  width:100%;
-
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:cover;
+    background-image: url("/barnevernbemanning/wp-content/themes/bb-theme/img/konsulenter.jpg");
+    min-height: 500px;
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .parallax3 {
-  /* The image used */
-background-image: url("/barnevernbemanning/wp-content/themes/bb-theme/img/bamse.jpg");
-
-  /* Set a specific height */
-  min-height: 500px;
-  width:100%;
-
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url("/barnevernbemanning/wp-content/themes/bb-theme/img/bamse.jpg");
+    min-height: 500px;
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .parallax4 {
-  /* The image used */
-     background-image: url("/barnevernbemanning/wp-content/themes/bb-theme/img/tlf.jpg");
-  /* Set a specific height */
-  min-height: 500px;
-  width:100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url("/barnevernbemanning/wp-content/themes/bb-theme/img/tlf.jpg");
+    min-height: 500px;
+    width:100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .tekstWrapper {
-height:100%;
-display:flex;
-flex-direction:column;
-padding-right:50%;
-align-content: center;
-justify-content:center;
-padding-left:2vw;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    padding-right:50%;
+    align-content: center;
+    justify-content:center;
+    padding-left:2vw;
 }
 
 .tekstWrapperLeft {
-height:100%;
-display:flex;
-flex-direction:column;
-padding-left:50%;
-align-content: center;
-justify-content:center;
-padding-right:2vw;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    padding-left:50%;
+    align-content: center;
+    justify-content:center;
+    padding-right:2vw;
 }
 
 .btn {
-background:#993441;
-width: fit-content; 
-border:none;
-margin-bottom:1vh;
+    background:#993441;
+    width: fit-content; 
+    border:none;
+    margin-bottom:1vh;
+    font-size:1.3rem;
 }
 
 .btn:hover {
-background:#E19595;
-border:none;
+    background:#E19595;
+    border:none;
 }
 
 .btn:active {
-background:#E19595;
-border:none;
+    background:#E19595;
+    border:none;
 }
 
 .btn:focus {
-background:#E19595;
-border:none;
+    background:#E19595;
+    border:none;
 }
 
 a {
-text-decoration:none;
+    text-decoration:none;
 }
 
 
 /* Tjenester */
 #tjenester {
-margin-bottom:10vh;
+    position:relative;
+    top:100px;
+    height:auto;
+}
+
+#tjenester h3 {
+    text-align:center;
+    color:#6B333A;
+    padding-bottom:120px;
 }
 
 .tjeneste {
-height:140px;
-width:220px;
-position:relative;
-z-index:-1;
+    height:300px;   
+    width:150px;
+    position:relative;
+    margin-left:50px;
+    margin-right:50px;
 }
 
 .tjenesterIcons {
-display:flex;
-justify-content:center;
-text-align:center;
-padding:2%; 
+    display: flex;
+    align-items: center;
+    justify-content:center;    
 } 
 
-.tjenesterIcons h3 {
-margin-bottom:4%;
-font-size:1.4rem;
+.topp {
+    font-size:70px;
+    color:#F8F8F8;
 }
 
-.tjenesterIcons i {
-position: absolute;
-bottom:0;
-font-size:6rem;
-margin-left: auto;
-margin-right: auto;
-left: 0;
-right: 0;
-text-align: center;
+.forminsk {
+    font-size:60px;
+    color:#F8F8F8;
+}
+
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    width: 145px;
+    padding: 10px;
+    background-color: #6B333A;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border:none;
+}
+
+.circle:hover{
+    background-color:#C85757 ;
+}
+
+.lKnapp {
+    background:#6B333A;
+    border:none;
+    color:#F8F8F8;
+    padding:10px 20px 10px 20px;
+    border-radius:10px;
+}
+
+.lKnapp:hover {
+    background:#C85757;
 }
 
 .tjenesterIcons p {
-display:flex;
-justify-content:center;
-font-weight:bold;
+    display:flex;
+    justify-content:center;
+    font-weight:bold;
+    margin-top:-70px;
+    margin-bottom:30px;
+    color:#6B333A;
+    white-space: nowrap;
+}
+
+#maintextTjenester{
+    height:auto;
+    line-height:2;
+    padding-bottom:120px;
+    padding-top:100px;
+    background:#F1E8E7;
+}
+
+.tjeneste h3 {
+    color:#6B333A !important;
+    font-size:1.7rem;
+    padding-bottom:15px !important;
+    padding-top:20px;
+}
+
+#bg{
+    width:100vw;
+    height:100vh;
+    left:0;
+    top:0;
+    background:black;
+    opacity:0.75;
+    position:fixed;
+    z-index:1;
+    border:none;
+}
+
+#bg:hover{
+    opacity:0.70;
+}
+
+#popupWrapper {
+    background:#F8F8F8;
+    border:none;
+    border-radius:20px;
+    width: 40vw;
+    position:fixed;
+    top:40vh;
+    left:30vw;
+    z-index:1;
+    padding:20px;
+    text-align:center;
+}
+
+#popup p {  
+    color:black;
+    white-space:normal;
+    margin-top:0px;
+    padding:10px;
+    font-weight:400;
+    text-align:left;
 }
 
 
-#maintextTjenester{
-height:auto;
-line-height:2;
-padding-bottom:6vh;
-padding-top:8vh;
-background:#F1E8E7;
+/* Om Oss */
+.hand {
+    text-align:center;
+}
+
+.hand img{
+    margin-top:10%;
+    width:10%;
 }
 
 
 /* Kontakt oss */
+.AS i {
+    font-size:1.1rem;
+    vertical-align: middle;
+}
+
+.eriksen i {
+    font-size:1.3rem;
+    vertical-align: middle;
+}
+
 .AS{
-margin:0 auto;
-text-align:center;
-padding-top:2vh;
+    margin:0 auto;
+    text-align:center;
+    padding-top:2vh;
 }
     
 .eriksen{
-margin:0 auto;
-text-align:center;
-padding-top:1vh;    
-padding-bottom:2vh;    
+    margin:0 auto;
+    text-align:center;
+    padding-top:5vh;    
+    padding-bottom:2vh;    
 }
 
 #kontaktskjema {
-padding-top:2%;
-z-index:-1;
-padding-bottom:15vh;
-}
-
-.nf-field-element {
-z-index:-1;
+    padding-top:2%;
+    padding-bottom:15vh;
 }
 
 #nf-form-2-cont .nf-form-content input[type="text"],  #nf-form-2-cont .nf-form-content input[type="email"], #nf-form-2-cont .nf-form-content textarea{
@@ -561,38 +726,65 @@ z-index:-1;
 
 
 /* Konsulenter*/ 
+#mer {
+    display: none;
+}
+
+#lesMer {
+    background:#F8F8F8;
+    border:none;
+    color:#993441;
+    margin-top:-40px;
+}
+
 #konsulentParent {
-display:flex;
-width:70%;
-height:auto;
-margin:0 auto; 
+    display:flex;
+    width:70%;
+    height:auto;
+    margin:0 auto; 
 }
 
 #konsulent h3 {  
-margin-bottom:3vh;
+    margin-bottom:3vh;
 }
 
 .konsulent1 {
-display: flex;
-flex-wrap:nowrap;
+    display: flex;
+    flex-wrap:nowrap;
 }
 
 .konsulentBildeWrapper {
-display:flex;
-align-items: center;
-float: left;
-text-align:center;
-margin-bottom:15vh;
-z-index:-1;
+    display:flex;
+    align-items: flex-start;
+    float: left;
+    text-align:center;
+    margin-bottom:15vh;
+}
+
+#infoMobile {
+    padding-top:20px;   
+}
+
+#infoMobile p {
+    margin-bottom:1%;    
+}
+
+.konsulentBildeContainer i {
+    vertical-align:middle;
+    font-size:1.1rem;
+}
+
+#infoMobile i {
+    font-size: 1.1rem;
+    vertical-align:middle;
 }
 
 .konsulentTekstWrapper {
-display:flex;
-float: right;
-flex-direction: column;
-margin-bottom:15vh;
-padding-left:5vh;
-margin-top:5vh;
+    display:flex;
+    float: right;
+    flex-direction: column;
+    margin-bottom:15vh;
+    padding-left:5vh;
 }
 
 #konsulent .konsulentTekstWrapper {
@@ -600,174 +792,237 @@ margin-top:5vh;
 }
 
 .konsulentBildeContainer {
-position: relative;
-width: 100%;
+    position: relative;
+    width: 100%;
 }
 
 .konsulentBildeContainer h3{
-margin-top:1.5em;
-line-height:0em;
+    margin-top:1.5em;
+    line-height:0em;
 }
 
 .konsulentBildeContainer p{
-margin-bottom:0.3em;
+    margin-bottom:0.3em;
 }
 
 #konsulentParentMobile{
-display:flex;
-flex-direction:column;
+    display:flex;
+    flex-direction:column;
 }
 
 .konsulentTekstWrapperMobile{
-padding-top:5%;
+    padding-top:5%;
 }
 
 #konsulentMobile{
-display:none;
+    display:none;
+    padding-bottom:50px;
 } 
 
 .circle-image{
-  display: inline-block;
-  border-radius: 50%;
-  overflow: hidden;
-  width: 225px;
-  height: 225px;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 225px;
+    height: 225px;
 }
 
 .circle-image img{
-  width:100%;
-  height:100%;
-  object-fit: cover;
+    width:100%;
+    height:100%;
+    object-fit: cover;
 }
+
+.tjenesteWrapper {
+    width:50%;   
+    text-align:center;
+    margin:0 auto;    
+}
+
 
 
 /* Responsiveness */
 @media screen and (max-width: 1600px) { 
+    
 .maintextwrapper {
-width:55%;
+    width:55%;
 }
-   
+
+h1{
+    font-size:3.5rem;
+}
+    
+h2 {
+    font-size:2.5rem;
+}
+    
+h3 {
+    font-size:2rem;
+}
+    
+#tjenester h3 {
+    font-size:1.5rem;
+}
+    
 }
 
 @media screen and (max-width: 1400px) { 
+    
 .maintextwrapper {
-width:60%;
+    width:60%;
 }
 
 }
 
 
 @media screen and (max-width: 1200px) { 
-#bgheader ul {
-top:3%;
-}    
-    
-.logo {
-height: 70px;
-}
-    
-#bgheader {
-height:70px;
-}
 
-.bannerPush{
-height:70px;
+#konsulentMobile{
+    display:block;
+} 
+    
+#konsulent{
+    display:none;
+} 
+
+.konsulentBildeWrapper{
+    margin:0 auto;
+} 
+    
+h1{
+    font-size:3rem;
 }
- 
- 
+    
+h2 {
+    font-size:2rem;
+}
+    
+h3 {
+    font-size:1.5rem;
+}   
     
 }
 
 
 /* MOBIL breakpoint */   
 @media screen and (max-width: 991px) { 
-.maintextwrapper {
-width:75%;
-}
-
-#konsulentMobile{
-display:block;
-} 
     
-#konsulent{
-display:none;
-} 
-    
-h1{
-font-size:2rem;
-}
- 
-.konsulent1 {
-flex-wrap:wrap;
-}
-
-.konsulentBildeWrapper{
-margin:0 auto;
-}    
-
-#menuOpen{
-display:block;    
-}
-
-#menuClose{
-display:none;    
-}    
-    
-.desktop{
-display:none;
-}
-#homeArticlesDesktop{
-display:none;  
-} 
-#homeArticlesMobile{
-display:block; 
-z-index:-1;
-}
-
-.logofooter {
-height:74px;
-}
-    
-    
-@media screen and (max-width: 800px) { 
 .logo {
-height: 50px;
+    height: 70px;
 }
     
 #bgheader {
-height:50px;
-}    
+    height:70px;
+}
 
 .bannerPush{
-height:50px;
-}
-    
-#menuMobile {
-top:50px;
+    height:70px;
 }   
     
 .maintextwrapper {
-width:90%;
+    width:90%;
 }
     
-.tjeneste{
-width: 1000px
+h1{
+    font-size:2.1rem;
+}
+    
+h2 {
+    font-size:1.8rem;
+}
+    
+h3 {
+    font-size:1.5rem;
+}
+    
+
+#menuOpen{
+    display:block;    
+}
+
+#menuClose{
+    display:none;    
 }    
+    
+.desktop{
+    display:none;
+}
+    
+#homeArticlesDesktop{
+    display:none;  
+} 
+    
+#homeArticlesMobile{
+    display:block; 
+}
+
+.logofooter {
+    height:74px;
+}
+    
+#popupWrapper {
+    width: 80vw;
+    left:10vw;
+} 
+
+#tjenester{
+    top:80px;
+}
+
+#maintextTjenester{
+    padding-top:80px;      
+    padding-bottom:80px;          
+}
+    
+#toptext{
+    padding-top:80px;      
+    padding-bottom:80px;          
+}
+    
+.skille {
+    margin-top:10px;
+    margin-bottom:20px;
+}
+    
+#kontaktskjema{
+    padding-bottom:0;
+}
+    
+#maintext{
+    padding-top:80px;      
+    padding-bottom:80px;    
+}
+    
+.parallax, .parallax2, .parallax3, .parallax4 {
+    
+    min-height:300px;
+}     
+    
+}
+
+
+@media screen and (max-width: 600px) { 
+    
+h2 {
+    font-size:1.4rem;
+}
+    
+h3 {
+    font-size:1.2rem;
+}
+    
+p {
+    font-size:1rem;
+}
 
 }
     
-@media screen and (max-width: 600px) { 
-.maintextwrapper {
-width:97%;
-}
-
-}
 
 /* Slår av parallax for mobile enheter og tablets */
 @media only screen and (max-device-width: 1200px) {
 .parallax, .parallax2, .parallax3, .parallax4 {
     
-background-attachment: scroll;
+    background-attachment: scroll;
 }
     
 }

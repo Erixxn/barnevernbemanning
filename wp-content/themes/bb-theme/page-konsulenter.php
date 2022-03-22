@@ -18,11 +18,12 @@
 
 <div id="topp"></div>
 
-<div id="arrow">
-    <a href="#topp" id="arrow"><i class="material-icons">arrow_drop_down</i></a>
-</div>
+
+<a href="#hit" class="scroll-down" address="true"></a>
+
 
 <! –– Hovedtekst ––>
+<div id="hit"></div>
 <div id="toptext" class="container-fluid px-0">
  
     <div class="maintextwrapper col-md-9">
@@ -51,21 +52,26 @@
                         <img src="/barnevernbemanning/wp-content/themes/bb-theme/img/kjell.jpg" alt="Files">
                     </span>
         
-                    <h3> Kjell Inge Eriksen</h3>
+                    <h3>Kjell Inge Eriksen</h3>
                     <p>Sosionom</p>
-                    <p>kjell.inge@barnevernbemanning.no</p>
-                    <p>+47 400 67 005</p>
+                    <p><i class="material-icons">email</i><a href="mailto:kjell.inge@barnevernbemanning.no">   kjell.inge@barnevernbemanning.no</a></p>
+                    <p><i class="material-icons">phone</i><a href="tel:+47-400-67-005">   +47 400 67 005</a></p>
                     <p>CV gis ved forespørsel</p>
 
                 </div>    
             </div>   
     
             <div class="konsulentTekstWrapper col-md-7">    
+                
+                
                 <p>Kjell Inge har arbeidet i barneverntjenesten siden 1992. Først som kommunalt ansatt i 10 år, og siden 2003 som utleid konsulent, først fra eget firma, og deretter som utleid konsulent fra ulike vikarbyråer innenfor barnevernfeltet. Det er gjennom den lange erfaringen Kjell Inge fikk ideen om å lage et nettverk av erfarne konsulenter, som har som mål å tilby kommunale barneverntjenester god barnevernfaglig bistand til en lavere kostnad enn det vikarbyråene klarer. </p>
 
-                <p>Kjell Inge er sosionom med videreutdanning i barne- og ungdomsvern. Kjell Inge har allsidig arbeidserfaring innenfor barnevernsfeltet, og har også vært beredskapshjem i 1 år og fosterhjem i 10 år. Kjell Inge har fra 2003 til dags dato hatt oppdrag som konsulent for omkring 40 ulike kommuner, og gjentatte ganger i flere av kommunene.  </p>
+                <p>Kjell Inge er sosionom med videreutdanning i barne- og ungdomsvern. Kjell Inge har allsidig arbeidserfaring innenfor barnevernsfeltet, og har også vært beredskapshjem i 1 år og fosterhjem i 10 år.</p><span id="dots"></span><span id="mer"><p>Kjell Inge har fra 2003 til dags dato hatt oppdrag som konsulent for omkring 40 ulike kommuner, og gjentatte ganger i flere av kommunene. </p>
 
-                <p>Kjell Inge har mye erfaring med alle typer saker i barnevernet som undersøkelsessaker, veiledning og andre tiltakssaker, samt oppfølging av barn under barnevernets omsorg, både i fosterhjem, institusjon og på ettervern. Før 2018 forberedte og representerte Kjell Inge kommunale barneverntjenester med mange saker for fylkesnemnd, tingrett og lagmannsrett. </p>
+                <p>Kjell Inge har mye erfaring med alle typer saker i barnevernet som undersøkelsessaker, veiledning og andre tiltakssaker, samt oppfølging av barn under barnevernets omsorg, både i fosterhjem, institusjon og på ettervern. Før 2018 forberedte og representerte Kjell Inge kommunale barneverntjenester med mange saker for fylkesnemnd, tingrett og lagmannsrett.</p> </span>
+
+                <button onclick="myFunction()" id="lesMer">Les mer</button>
+                
             </div>
         </div>
 
@@ -87,10 +93,10 @@
 
         <div id="infoMobile">  
             <h3>Kjell Inge Eriksen</h3>
-            <p>Sosionom<br>
-            +47 400 67 005<br>
-            kjell.inge@barnevernbemanning.no<br>
-            CV gis ved forespørsel</p>
+            <p>Sosionom</p>
+            <p><i class="material-icons">phone</i><a href="tel:+47-400-67-005">   +47 400 67 005</a></p>
+            <p><i class="material-icons">email</i><a href="mailto:kjell.inge@barnevernbemanning.no">   kjell.inge@barnevernbemanning.no</a></p>
+            <p>CV gis ved forespørsel</p>
         </div>   
     
         <div class="konsulentTekstWrapperMobile"> 
@@ -104,6 +110,8 @@
 
     </div>    
 </div>
+
+
 
 
 <?php endwhile; else: ?>
