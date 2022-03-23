@@ -502,25 +502,12 @@ section {
     border:none;
     margin-bottom:1vh;
     font-size:1.3rem;
+    box-shadow:none;
 }
 
 .btn:hover {
     background:#E19595;
     border:none;
-}
-
-.btn:active {
-    background:#E19595;
-    border:none;
-}
-
-.btn:focus {
-    background:#E19595;
-    border:none;
-}
-
-a {
-    text-decoration:none;
 }
 
 
@@ -645,10 +632,11 @@ a {
 }
 
 #popup p {  
+    display:block;
     color:black;
     white-space:normal;
     margin-top:0px;
-    padding:10px;
+    margin:20px;
     font-weight:400;
     text-align:left;
 }

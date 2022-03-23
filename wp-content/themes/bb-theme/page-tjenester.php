@@ -37,7 +37,9 @@
                     <button id="bg" onclick="lukkDiv()"></button>  
                     <div id="popupWrapper">
                         <h3>Saksbehandling</h3>
-                        <p>Saksbehandlingen skal være betryggende, rask og tillitsskapende. Det er viktig at saksbehandlingen oppfyller grunnleggende krav til rettssikkerhet og at ressursbruken er tilpasset tiltaket og        sakens art, omfang og vanskelighetsgrad. <br>Saksbehandlingen skal legge til rette for at barneverntjenesten fatter riktige avgjørelser til rett tid, og for at barn og foreldres rettigheter          ivaretas på en god måte. <br> Våre konsulenter har lang erfaring med alle sider av saksbehandling. </p>
+                        <p>Saksbehandlingen skal være betryggende, rask og tillitsskapende. <br> Det er viktig at saksbehandlingen oppfyller grunnleggende krav til rettssikkerhet og at ressursbruken er tilpasset tiltaket      og sakens art, omfang og vanskelighetsgrad. </p>
+                        <p>Saksbehandlingen skal legge til rette for at barneverntjenesten fatter riktige avgjørelser til rett tid, og for at barn og foreldres rettigheter ivaretas på en god måte. </p>
+                        <p>Våre konsulenter har lang erfaring med alle sider av saksbehandling. </p>
                         <button class="lKnapp" onclick="lukkDiv()">Lukk</button> 
                     </div>
                 </div>
@@ -55,9 +57,9 @@
                     <button id="bg" onclick="lukkDiv()"></button>
                     <div id="popupWrapper">
                         <h3>Tilsynsføring</h3>
-                        <p> En tilsynsfører har som formål å sikre at barnet blir godt ivaretatt. Tilsynsfører har som sin ene viktige oppgave – uavhengig av særlige interesser barneverntjeneste, fosterforeldre og foreldre      måtte ha – å følge med og gjøre seg opp en mening om hvorvidt barnet blir tilfredsstillende ivaretatt. <br> Som sin andre viktige oppgave har tilsynsfører ansvar for å sørge for at barnets          erfaringer og oppfatninger fanges opp og formidles til barnverntjenesten. <br>
-                             Våre konsulenter har lang erfaring med denne typen arbeid
-                        </p>
+                        <p>En tilsynsfører har som formål å sikre at barnet blir godt ivaretatt. Tilsynsfører har som sin ene viktige oppgave – uavhengig av særlige interesser barneverntjeneste, fosterforeldre og foreldre    måtte ha – å følge med og gjøre seg opp en mening om hvorvidt barnet blir tilfredsstillende ivaretatt.</p>
+                        <p>Som sin andre viktige oppgave har tilsynsfører ansvar for å sørge for at barnets erfaringer og oppfatninger fanges opp og formidles til barnverntjenesten.</p>
+                        <p>Våre konsulenter har lang erfaring med denne typen arbeid</p>
                         <button class="lKnapp" onclick="lukkDiv()">Lukk</button>  
                     </div>
                 </div>
@@ -75,7 +77,8 @@
                     <button id="bg" onclick="lukkDiv()"></button>
                     <div id="popupWrapper">
                         <h3>Oppfølging av fosterhjem</h3>
-                        <p> Barneverntjenesten har et oppfølgingsansvar for barn og foreldre når barn eller ungdom er plassert i fosterhjem. Våre konsulenter har bred erfaring med slik oppfølging. </p>
+                        <p>Barneverntjenesten har et oppfølgingsansvar for barn og foreldre når barn eller ungdom er plassert i fosterhjem.</p>
+                        <p>Våre konsulenter har bred erfaring med slik oppfølging.</p>
                         <button class="lKnapp" onclick="lukkDiv()">Lukk</button> 
                     </div>
                 </div>
@@ -97,7 +100,8 @@
                     <button id="bg" onclick="lukkDiv()"></button>
                     <div id="popupWrapper">
                         <h3>Ettervern</h3>
-                        <p> Når klienten har fylt 18 år er kommunen pliktig å sikre godt ettervern. Dette er noe våre konsulenter har mye erfaring med </p>
+                        <p>Når klienten har fylt 18 år er kommunen pliktig å sikre godt ettervern.</p>
+                        <p> Dette er noe våre konsulenter har mye erfaring med.</p>
                         <button class="lKnapp" onclick="lukkDiv()">Lukk</button>  
                     </div>
                 </div>
@@ -115,9 +119,11 @@
                     <button id="bg" onclick="lukkDiv()"></button>
                     <div id="popupWrapper">
                         <h3>Tiltaksarbeid</h3>
-                        <p> Det må være en sammenheng mellom de behov som skal imøtekommes og de tiltak som settes i verk. Det er viktig at tiltakene er ”behovsstyrt”: valgt ut fra klientens behov, heller enn
-                            ”tilbudsstyrt”: valgt ut fra hvilke tiltak som er lett tilgjengelige og vanlige. <br>
-                            Våre konsulenter har mye kunnskap og erfaring med tiltaksarbeid.
+                        <p>Det må være en sammenheng mellom de behov som skal imøtekommes og de tiltak som settes i verk.</p>
+                        <p><b>Det er viktig at tiltakene er:</b><br>
+                           ”behovsstyrt”: valgt ut fra klientens behov, heller enn <br>
+                           ”tilbudsstyrt”: valgt ut fra hvilke tiltak som er lett tilgjengelige og vanlige.</p>
+                        <p>Våre konsulenter har mye kunnskap og erfaring med tiltaksarbeid.</p>
                         </p>
                         <button class="lKnapp" onclick="lukkDiv()">Lukk</button>  
                     </div>
@@ -136,7 +142,8 @@
                     <button id="bg" onclick="lukkDiv()"></button>
                     <div id="popupWrapper">
                         <h3>Oppfølging av institusjon</h3>
-                        <p> Barneverntjenesten har et oppfølgingsansvar for barn og foreldre når barn eller ungdom er plassert i institusjon. Våre konsulenter har bred erfaring med slik oppfølging. </p>
+                        <p>Barneverntjenesten har et oppfølgingsansvar for barn og foreldre når barn eller ungdom er plassert i intitusjon.</p>
+                        <p>Våre konsulenter har bred erfaring med slik oppfølging.</p>
                         <button class="lKnapp" onclick="lukkDiv()">Lukk</button>  
                     </div>
                 </div>
